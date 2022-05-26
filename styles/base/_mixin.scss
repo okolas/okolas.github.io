@@ -1,0 +1,19 @@
+@mixin flex ($d, $fd, $jc){
+    display: $d;
+    flex-direction: $fd;
+    justify-content: $jc;
+}
+@mixin button ($w, $h, $bgc, $col, $br, $fz, $mt){
+    width: $w;
+    height: $h;
+    background: $bgc;
+    color: $col;    
+    border-radius: $br;
+    font-size: $fz;    
+    margin-top: $mt;   
+}
+
+    
+    
+
+    

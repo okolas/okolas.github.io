@@ -1,0 +1,1185 @@
+@import "base/base";
+@import "base/mixin";
+@import "font.css";
+%font-mont-bold{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+}
+%font-mont{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+}
+%font-rob{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &-logo{
+        margin-left: 17.2%; 
+    }
+    &-log{
+        margin-right: 20.2%;
+        @include flex (flex, row, space-between);
+        width: 153px;
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    &-share{
+        margin: auto;
+        @include flex (flex, column, center);
+        align-items: center;
+        flex-wrap: wrap;
+        width: 470px;
+        margin-top: 147.5px;
+    }
+}
+.logo-link{
+    @extend %font-mont-bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 40px;
+}
+.login{
+    display: block;
+    height: 17px;
+    @extend %font-mont;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 50px;    
+}
+.button-transper{    
+    @include button (90px, 36px, transparent, #FFFFFF, 40px, 14px, 40px);    
+    @extend %font-mont;
+    line-height: 17px;    
+    border: 2px solid #FFFFFF;    
+    margin-left: 19px;
+}
+.share{
+    @extend %font-mont-bold;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.find{
+    @extend %font-rob;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #F7F3F2;
+    margin-top: 28.5px;
+}
+.button-red{
+    @include button (225px, 40px, #FF4E50, #FFFFFF, 40px, 14px, 33px);   
+    border-width: 0;    
+    @extend %font-mont-bold;    
+    align-items: center;
+    text-align: center;
+    align-content: center;      
+    padding-top: 4px;
+    
+}
+.wrapper{
+    width: 100%;
+}
+.how{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+.title{
+    @extend %font-mont-bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #444444;
+    margin-top: 89px; 
+    &-how{
+      margin-left: 14px;  
+    }  
+    &-minor{
+       margin-top: 22px;
+        font-size: 24px;
+        line-height: 26px;
+        display: flex;
+        color: #FFFFFF;
+        text-align: left; 
+    }
+}
+.steps{
+    @include flex (flex, row, center);
+    margin-top: 35px;
+    margin-left: 14px;    
+}
+.step{
+    width: 300px;
+    height: 400px;
+    &-btn{
+        width: 70px;
+        height: 20px;
+        @extend %font-mont;
+        font-size: 10px;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        letter-spacing: 2px;
+        margin-top: 219px; 
+        padding-left: 9px;
+    }
+    &1{
+        background-image: url(../images/step1.png);
+    }
+    &2{
+        background-image: url(../images/step2.png);
+        margin-left: 1.38%;
+    }
+    &3{
+        background-image: url(../images/step3.png);
+        margin-left: 1.38%;
+    }
+}
+.inner-step{
+    height: 400px;
+    margin-left: 8%;
+    margin-right: 8%;
+}    
+.text{
+    @extend %font-rob;
+    font-size: 14px;
+    line-height: 14px;
+    color: #E3E3E3;
+    margin-top: 25px;
+}
+.btn-2{
+    margin-top: 250px;
+    margin-bottom: 2px;
+}
+.txt-2{
+    margin-top: 19px;
+}
+.meet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partners{
+    width: 65.35%;
+    @include flex (flex, row, space-between);
+    margin-top: 35px;
+    &-mobile{
+        display: none;
+    }   
+    &-tablet{
+        width: 49%;
+        @include flex (flex, row, space-between);
+    } 
+}
+.partner{
+    width: 221px;
+    height: 224px;
+    @include flex (flex, column, space-between);
+    align-items: center;
+    &1{
+       height: 205px; 
+    }
+}
+.imag{
+    width: 120px;
+    height: 120px;
+}
+.name{
+    @extend %font-mont-bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #444444;
+    margin-top: -3px;
+    &-big{
+       margin-top: -7px; 
+    }
+}
+.about{
+    @extend %font-rob;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    margin-top: 2px;
+}
+
+.see-btn{
+    @include button (180px, 40px, transparent, #FF4E50, 40px, 14px, 36px);
+    font-weight: 700;   
+    border: 2px solid #FF4E50;    
+    margin-left: 0;
+    padding-top: 3px;
+    padding-left: 14px;
+}
+.discover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.photos-block{
+    height: 970px;
+    width: 940px;
+    @include flex (flex, column, space-between);
+    margin-top: 35px;
+}
+.photos{
+    width: 100%;
+    @include flex (flex, row, space-between);
+    @extend %font-mont-bold;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 27px;
+}
+.photo{
+    width: 300px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-big{
+        width: 620px;
+        height: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-1{
+        background-image: url(../images/Sport.png);
+    }
+    &-2{
+        background-image: url(../images/Healath.png);
+    }
+    &-3{
+        background-image: url(../images/Extreme.png);
+    }
+    &-4{
+        background-image: url(../images/Games.png);
+    }
+    &-5{
+        background-image: url(../images/Culture.png);
+    }
+    &-6{
+        background-image: url(../images/Culture\ Copy.png);
+    }
+    &-7{
+        background-image: url(../images/Games\ Copy.png);
+    }
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hi{
+    @extend %font-rob;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    margin-top: 53px;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 481.12px;
+    height: 100%;
+    margin-top: 25px;
+    &-enter{
+        width: 280px;
+        background: #FFFFFF;
+        border: 1px solid #D4D4D4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        @extend %font-rob;
+        font-size: 14px;
+        line-height: 16px;
+        color: #999999;
+        padding-left: 12.62px;
+        padding-top: 5px;
+    }
+}
+.search{
+    width: 172.12px;
+    margin-top: 0;
+}
+
+footer{
+    width: 100%;
+    height: 224px;
+    display: grid;
+    grid-template-columns: 17.29% 16.73% 16.6% 24.38% auto;
+    grid-template-rows: 39px 186px;
+    margin-top: 100px;
+    margin-bottom: 36px;
+}
+.rect{
+    grid-column: 1/6;
+    grid-row: 1;
+}
+.redline{
+    width: 100%;
+    height: 2px;
+    background: #FF4E50;
+}
+.f-margin-left{
+    grid-column: 1;
+    grid-row: 1;
+}
+.red-logo{
+    grid-column: 2;
+    grid-row: 2;
+    @extend %font-mont;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF4E50;
+}
+.company{
+    grid-column: 3;
+    grid-row: 2;
+    &-title{
+        @extend %font-mont-bold;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 2px;
+        color: #444444;
+    }
+}
+.menu{
+    @extend %font-rob;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 11px;
+    color: #999999;
+}
+.partnership{
+    grid-column: 4;
+    grid-row: 2;
+}
+.mark{
+    grid-column: 5;
+    grid-row: 2;
+}
+.design{
+    @extend %font-mont-bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+    margin-top: 2px;
+    margin-left: 30px;
+}
+.logo-mark{
+    width: 110px;
+    height: 24px;
+    background-image: url(../images/Bitmap.png);
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 940px) and (min-width: 769px){
+    .how{
+        margin: auto;
+        width: 96%;
+    }
+    .steps{
+        width: 100%;
+    }
+    .discover{
+        width: 96%;
+        margin: auto;
+    }
+    .photos-block{
+        width: 100%;
+    }
+    .partners-mobile{
+        display: none;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 642px){
+    .header-logo{
+        margin-left: 6.25%;    
+    }
+    .header-log{
+        margin-right: 6.51%;
+        /* width: 20%; */
+    }
+    .signup{
+        margin-left: 2.46%;
+    }
+    .wrapper{
+        width: 97%;
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 22px;
+        line-height: 27px;
+        margin-top: 94px;
+    }
+    .title-how{
+        margin-left: 3px;
+    }
+    .steps{
+        justify-content: space-between;
+        margin-left: 1px;
+    }
+    .step{
+        width: 236px;
+    }
+    .step1{
+        background-image: url(../images/step1.png);
+    }
+    .step2{
+        background-image: url(../images/step2.png);
+        margin-left: 2.9%;
+    }
+    .step3{
+        background-image: url(../images/step3.png);
+        margin-left: 2.9%;
+    }    
+    .step-btn{
+        line-height: 12px;
+        margin-top: 205px;  
+    }
+    .btn-2{
+        margin-top: 255px;
+    }
+    .title-minor{
+        font-size: 24px;
+        line-height: 14px;
+        margin-top: 46px;
+    }
+    .mid-title{
+        margin-top: 17px;
+    }
+    .text{
+        margin-top: 30px;        
+    }
+    .txt-2{
+        margin-top: 24px;
+    }
+    .partners{
+        width: 66.06%;
+    }
+    .partners-mobile{
+        display: none;
+    }
+    .partners-tablet{
+        flex-direction: column;
+        height: 465px;
+    }
+    .pt2{
+        height: 464px;
+        margin-left: 20px;
+    }
+    .partner{
+        width: 236px;
+    }
+    .chris{
+        height: 205px;
+    }
+    .about{
+        width: 100%;
+    }
+    .name-big{
+        margin-top: 0px;
+    }
+    .see-btn{
+        margin-top: 39px;
+    }
+    .discover{
+        margin: auto;        
+    }
+    .photos-block{
+        width: 100%;
+    }
+    .photo{
+        width: 236px;
+        background-position-x: center;
+    }
+    .photo-big{
+        width: 492px;
+    }
+    .photo-1{
+        background-image: url(../images/tSport.png);
+    }
+    .photo-2{
+        background-image: url(../images/tHealath.png);
+    }
+    .photo-3{
+        background-image: url(../images/tExtreme.png);
+    }
+    .photo-5{
+        background-image: url(../images/tCulture.png);
+    }
+    .photo-7{
+        background-image: url(../images/tGames\ Copy.png);
+    }
+    .sport{
+        width: 206px;
+        margin-bottom: 26px;
+    }
+    footer{
+        width: 100%;
+        height: 224px;
+        display: grid;
+        grid-template-columns: 5.07% 29.5% 22.13% 23.7% auto;
+        grid-template-rows: 39px 186px;
+        margin-top: 100px;
+        margin-bottom: 36px;
+    }
+    .rect{
+        grid-column: 1/6;
+        grid-row: 1;
+    }
+    .redline{
+        width: 100%;
+        height: 2px;
+        background: #FF4E50;
+    }
+    .f-margin-left{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .red-logo{
+        grid-column: 2;
+        grid-row: 2;
+        @extend %font-mont;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #FF4E50;
+    }
+    .company{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .company-title{
+        @extend %font-mont-bold;
+        font-size: 14px;
+        line-height: 17px;
+       
+        margin-top: 2px;
+        color: #444444;
+    }
+    .menu{
+        @extend %font-rob;
+        font-size: 14px;
+        line-height: 26px;
+        /* or 186% */
+        margin-top: 11px;
+        color: #999999;
+    }
+    .partnership{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .mark{
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .design{
+        @extend %font-mont-bold;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        color: #CCCCCC;
+        margin-top: 2px;
+        margin-left: 30px;
+    }
+    .logo-mark{
+        width: 110px;
+        height: 24px;
+        background-image: url(../images/Bitmap.png);
+        margin-top: 6px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 641px) and (min-width: 321px){
+    .header{
+        height: 700px;
+        background-image: url(../images/Backgroukghkgnd.png);
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .header-logo{
+        margin-left: 22px;  
+        margin-top: 147.5px;  
+    }
+    .logo-link{
+         margin-top: 0; 
+        
+    }
+    .button-transper{
+        margin-top: 20px;
+    }
+    .header-log{
+        margin-right: 0;
+    }
+    .login{
+        margin-top: 30px;
+    }
+    .signup{
+        margin-top: 20px;
+    } 
+    .container-share{
+        margin: auto;
+        @include flex (flex, row, center);
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .share{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .find{
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 70px;
+        width: 280px;
+    }
+    .button-red{
+        width: 280px;
+        margin-top: 16px;   
+        
+    }  
+    .steps {
+        justify-content: space-between;
+        margin-left: 1px;
+        @include flex (flex, column, space-evenly);    
+        margin-top: 35px;
+        margin-left: 14px;
+        flex-wrap: wrap;        
+        align-items: center;
+    }
+    .step3, .step2{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .inner-step{
+        height: 240px;
+        margin-left: 6.25%;
+        margin-right: 9.37%;
+    }        
+    .step-btn{
+        width: 70px;
+        height: 20px;
+        line-height: 12px;
+        margin-top: 219px;  
+    }
+    .title-minor{
+        margin-top: 45px;
+        line-height: 14px;
+        text-align: left;
+        font-size: 24px;       
+    }
+    .text{
+        margin-top: 26px;
+    }
+    .mid-title{
+        margin-top: 31px;
+    }
+    .btn-2{
+        margin-top:250px;
+        margin-bottom: -1px;
+    }
+    .txt-2{
+        margin-top: 24px;
+    }
+
+
+
+    .partners{
+        width: 65.35%;
+        @include flex (flex, column, space-between);
+        margin-top: 35px;
+        align-items: center;
+        
+    }
+    .partners-mobile{
+        display: none;
+    }
+    .partners-tablet{
+        width: 100%;
+        align-items: center;
+    }
+    .pt2{
+        margin-top: 10px;
+    }
+    .partner{
+        width: 100%;
+        
+    }
+    .partner1{
+        height: 205px;
+    }
+
+    .photos-block{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .photos{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .photo-big{
+        width: 98%;
+    }
+    .photo-7, .photo-2, .photo-3,.photo-4, .photo-5, .photo-6{
+        margin-top: 10px;
+    }
+    .form {
+        width: 98%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search {
+        margin-top: 10px;
+    }
+    footer{
+        width: 100%;
+        height: 226px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 21px 34px 90px 31px 65px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .rect{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .f-margin-left{
+        display: none;
+    }
+    .red-logo{
+        grid-column: 1;
+        grid-row: 2;
+        margin: auto;
+    }
+    .company{
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin-top: 14px;
+    }
+    .company-title{
+        @extend %font-mont-bold;
+        font-size: 14px;
+        line-height: 17px;        
+        margin-top: 2px;
+        color: #444444;
+    }
+    .menu{
+        width: 85%;
+        @extend %font-rob;
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 11px;
+        color: #999999;
+        width: 80%;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 1px;
+    }
+    .menu-ad{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .partnership{
+        grid-column: 1;
+        grid-row: 4;
+        margin: auto;
+    }
+    .mark{
+        grid-column: 1;
+        grid-row: 5;
+        
+    }
+    .design{
+        @extend %font-mont-bold;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+        color: #CCCCCC;
+        margin-left: 0;
+        margin-bottom: 7px;
+        margin-top: 14px;
+       
+    }
+    .logo-mark{
+        width: 110px;
+        height: 24px;
+        background-image: url(../images/Bitmap.png);
+        margin-top: 6px;
+        margin: auto;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width: 320px){
+    .header{
+        height: 540px;
+        background-image: url(../images/Backgroukghkgnd.png);
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .header-logo{
+        margin-left: 22px;  
+        margin-top: 97px;  
+    }
+    .logo-link{
+         margin-top: 0; 
+        
+    }
+    .button-transper{
+        margin-top: 20px;
+    }
+    .header-log{
+        margin-right: 0;
+    }
+    .login{
+        margin-top: 30px;
+    }
+    .signup{
+        margin-top: 20px;
+    } 
+    .container-share{
+        margin: auto;
+        @include flex (flex, column, center);
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 26.5px;
+        margin-left: 10px;
+    }
+    .share{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .find{
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5.5px;
+        width: 280px;
+    }
+    .button-red{
+        width: 280px;
+        margin-top: 16px;   
+        
+    }   
+    .title{
+        font-size: 22px;
+        line-height: 27px;
+        margin-top: 35px;  
+        text-align: center; 
+    }
+    .title-how{
+        margin-left: 0;
+    }
+    .steps{
+        @include flex (flex, column, center);
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .step{
+        width: 300px;
+        height: 240px;
+    }
+    .step1{
+        background-image: url(../images/mStep\ 1.png);
+    }
+    .step2{
+        background-image: url(../images/mStep\ 2.png);
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .step3{
+        background-image: url(../images/mStep\ 3.png);
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .inner-step{
+        height: 240px;
+        margin-left: 6.25%;
+        margin-right: 9.37%;
+    }        
+    .step-btn{
+        width: 70px;
+        height: 20px;
+        line-height: 12px;
+        margin-top: 64px;  
+    }
+    .title-minor{
+        margin-top: 45px;
+        line-height: 14px;
+        text-align: left;
+        font-size: 24px;       
+    }
+    .text{
+        margin-top: 26px;
+    }
+    .mid-title{
+        margin-top: 31px;
+    }
+    .btn-2{
+        margin-top: 95px;
+        margin-bottom: -1px;
+    }
+    .txt-2{
+        margin-top: 24px;
+    }
+    .partners{
+        width: 320px;
+        @include flex (flex, column, space-between);
+        margin-top: -2px;        
+    }
+    .partners-tablet{
+        display: none;    
+    }
+    .partners-mobile{        
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }
+    .partner{
+        width: 236px;
+        height: 205px;
+        margin-top: 16px;
+    }
+    .partner-di{
+        height: 224px;
+    }
+    .imag{
+        width: 120px;
+        height: 120px;
+    }
+    .name{
+        margin-top: 0px;
+    }
+    .name-big{
+        margin-top: -5px;
+    }
+    .see-btn{
+        width: 280px;
+        margin-top: 36px;
+    }
+    .title-mobile{
+        width: 280px;
+    }
+
+    .photos-block{
+        height: 100%;
+        width: 100%;        
+        margin-top: 23px;
+        align-items: center;
+    }
+    .photos{
+        width: 300px;
+        @include flex (flex, column, space-between);
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    .photo, .photo-big{
+        width: 300px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .photo-1{
+        background-image: url(../images/mSport.png);
+        
+    }
+    .photo-2{
+        background-image: url(../images/mHealath.png);
+    }
+    .photo-3{
+        background-image: url(../images/mExtreme.png);
+    }
+    .photo-4{
+        background-image: url(../images/mGames.png);
+    }
+    .photo-5{
+        background-image: url(../images/mCulture.png);
+    }
+    .photo-6{
+        background-image: url(../images/mCulture\ Copy.png);
+    }
+    .photo-7{
+        background-image: url(../images/mGames\ Copy.png);
+    }
+    .sport{
+        margin-bottom: 27px;
+    }
+    .sport, .wellness{
+        width: 206px;
+        
+    }
+    .hi{
+        margin-top: 19px;
+        margin-left: 3px;
+    }
+    .form{
+        @include flex (flex, column, space-between);
+        width: 280px;
+        margin-top: 15px;
+        align-items: center;
+        height: 90px;
+    }
+    .form-enter{
+        width: 262px;
+        height: 33px;
+        padding-left: 14.62px;
+        padding-top: 4px;
+        margin: auto;
+    }
+    .search{
+        width: 280px;
+        margin-top: 10px;
+        padding-top: 2px;
+        padding-left: 16px;
+    }
+    footer{
+        width: 100%;
+        height: 224px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 39px 74px 31px auto;
+        margin-top: 40px;
+    }
+    .rect{
+        grid-column: 1;
+        grid-row: 1;             
+    }
+    .redline{
+        width: 100%;
+        height: 2px;
+        background: #FF4E50;
+    }
+    .f-margin-left{
+        display: none;
+    }
+    .red-logo{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        margin-top: 23px;
+    }
+    .company{
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14px;
+    }
+    .menu{
+        width: 216px;
+        height: 52px;
+        margin-top: 1px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+        
+    }
+    .menu-ad{
+        width: 180px;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .partnership{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+    margin-top: 16px;
+    }
+    .mark{
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+    }
+    .design{
+        margin-top: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .logo-mark{
+        margin-top: 6px;
+    }
+}
